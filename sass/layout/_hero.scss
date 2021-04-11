@@ -12,8 +12,8 @@
     url(../images/tel/hero/1x/img.jpg);
 
   @media screen and (min-device-pixel-ratio: 2),
-  screen and (min-resolution: 192dpi),
-  screen and (min-resolution: 2dppx) {
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -30,8 +30,8 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),
-  screen and (min-resolution: 192dpi)  and (min-width: 480px),
-  screen and (min-resolution: 2dppx)  and (min-width: 480px){
+    screen and (min-resolution: 192dpi) and (min-width: 480px),
+    screen and (min-resolution: 2dppx) and (min-width: 480px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -48,8 +48,8 @@
   }
 
   @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
-  screen and (min-resolution: 192dpi)  and (min-width: 768px),
-  screen and (min-resolution: 2dppx)  and (min-width: 768px){
+    screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -62,7 +62,6 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 .hero__title {
   display: block;
@@ -83,18 +82,16 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero__title {
- margin-left: auto;
- margin-right: auto;
- 
-
-}
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .hero__title {
     margin-left: auto;
-     margin-right: auto;
-     font-size: 44px;
-  line-height: 1.36;
-}
+    margin-right: auto;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
