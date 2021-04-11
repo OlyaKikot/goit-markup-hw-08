@@ -1,12 +1,12 @@
 .features {
   padding-top: 60px;
- padding-bottom: 60px;
+  padding-bottom: 60px;
 }
 .features__conteiner {
   display: flex;
   background-color: var(--light-background);
   border-radius: 4px;
-  
+
   height: 120px;
   align-items: center;
   justify-content: center;
@@ -37,16 +37,15 @@
 }
 
 @media screen and (max-width: 767px) {
- 
-  .features__list
-
-  {
+  .features__list {
     display: block;
+  }
+  .features__title {
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-   
   .features__list {
     display: flex;
     flex-wrap: wrap;
@@ -57,14 +56,12 @@
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-   
   }
 }
 
 @media screen and (min-width: 1200px) {
-.features {
-  padding-top: 94px;
-  padding-bottom: 0;
- 
-}
+  .features {
+    padding-top: 94px;
+    padding-bottom: 0;
+  }
 }

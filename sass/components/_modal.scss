@@ -108,8 +108,9 @@
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
+  letter-spacing: 00.01em;
   .modal__checkbox:checked + & {
     border-color: transparent;
     background-size: contain;
@@ -119,6 +120,7 @@
 
 .modal__icon-check {
   margin-right: 7px;
+
   fill: var(--primary-color);
   border: 2px solid var(--title-text-color);
   border-radius: 2px;
@@ -188,5 +190,12 @@
     position: fixed;
     max-width: 528px;
     max-height: 581px;
+  }
+}
+
+@media screen and (max-width: 434px) {
+  .modal__label-chechbox {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
