@@ -1,0 +1,10 @@
+.hero__button {
+  @extend %button;
+  display: inline-block;
+  padding: 10px 32px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--background-hover);
+  }
+}
