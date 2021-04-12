@@ -80,6 +80,10 @@ body {
   }
 }
 
+.header {
+  border-bottom: 1px solid var(--header-border);
+}
+
 .conteiner-header {
   margin-left: auto;
   margin-right: auto;
@@ -235,6 +239,9 @@ body {
   .menu-contacts__link:hover, .menu-contacts__link:focus {
     color: var(--accent-color);
   }
+  .menu-contacts__link--curent {
+    color: var(--accent-color);
+  }
   .menu-social {
     display: flex;
   }
@@ -346,7 +353,6 @@ body {
     align-items: center;
   }
   .conteiner-header {
-    border-bottom: 1px solid var(--header-border);
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -362,6 +368,14 @@ body {
     margin-right: 88px;
     font-size: 24px;
     line-height: 1.37;
+  }
+  .contacts__item:first-child .contacts__icon {
+    width: 14px;
+    height: 10px;
+  }
+  .contacts__item:last-child .contacts__icon {
+    width: 10px;
+    height: 14px;
   }
 }
 
@@ -380,7 +394,6 @@ body {
     align-items: center;
   }
   .conteiner-header {
-    border-bottom: 1px solid var(--header-border);
     display: flex;
     align-items: center;
   }
@@ -397,8 +410,16 @@ body {
     display: flex;
     justify-content: space-between;
   }
-  .contacts__item:not(:last-child) {
+  .contacts__item:first-child {
     margin-right: 30px;
+  }
+  .contacts__item:first-child .contacts__icon {
+    width: 16px;
+    height: 12px;
+  }
+  .contacts__item:last-child .contacts__icon {
+    width: 10px;
+    height: 16px;
   }
 }
 
@@ -409,6 +430,8 @@ body {
 
 .cart-set__conteiner-text {
   position: absolute;
+  display: flex;
+  align-items: center;
   transform: translateY(101%);
   transition: transform 250ms var(--cubic-bezier);
   width: 100%;
@@ -701,7 +724,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .join__text {
     text-align: center;
   }
@@ -767,7 +790,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .subscribe-form {
     margin-top: 60px;
     text-align: center;

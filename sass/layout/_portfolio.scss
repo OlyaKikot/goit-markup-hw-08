@@ -3,10 +3,10 @@
   padding-bottom: 60px;
 }
 
-
 .cart-set__conteiner-text {
-
   position: absolute;
+  display: flex;
+  align-items: center;
   transform: translateY(101%);
   transition: transform 250ms var(--cubic-bezier);
   width: 100%;
@@ -52,12 +52,11 @@
 }
 .filter__item:not(:last-child) {
   margin-right: 8px;
-
 }
 .filter__button {
   transition: background-color 250ms var(--cubic-bezier),
     color 250ms var(--cubic-bezier), box-shadow 250ms var(--cubic-bezier);
-  border: 1px solid transparent;  
+  border: 1px solid transparent;
   padding: 6px 22px;
   border-radius: 4px;
   font-weight: 500;
@@ -103,7 +102,6 @@
   color: var(--primary-text-color);
 }
 
-
 .block {
   flex-grow: 1;
   padding: 20px 24px;
@@ -116,48 +114,42 @@
   .cart-set__text {
     font-size: 4vw;
   }
-  .block__title{
-    font-size: 3.9vw;}
-  .block__text{
+  .block__title {
+    font-size: 3.9vw;
+  }
+  .block__text {
     font-size: 3.4vw;
   }
   .filter__button {
     font-size: 3.4vw;
   }
-  
 }
 
-
 @media screen and (max-width: 767px) {
-  .cart-set__item:not(:last-child){
+  .cart-set__item:not(:last-child) {
     margin-bottom: 30px;
-
   }
   .filter__item {
-   
     margin-bottom: 15px;
   }
   .filter {
-   
     justify-content: left;
-
   }
 }
 
 @media screen and (min-width: 768px) {
   .cart-set {
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: -30px;
-      margin-left: -30px;
-    }
-    
-    .cart-set__item {
-      flex-basis: calc(100% / 2 - 30px);
-      margin-left: 30px;
-      margin-top: 30px;
-    }
- 
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+
+  .cart-set__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -166,16 +158,15 @@
     padding-bottom: 94px;
   }
   .cart-set {
-      display: flex;
-      flex-wrap: wrap;
-      margin-top: -30px;
-      margin-left: -30px;
-    }
-    
-    .cart-set__item {
-      flex-basis: calc(100% / 3 - 30px);
-      margin-left: 30px;
-      margin-top: 30px;
-    }
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
 
+  .cart-set__item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }

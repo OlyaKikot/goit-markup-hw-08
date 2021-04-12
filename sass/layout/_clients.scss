@@ -27,8 +27,7 @@
 
 .icon-company {
   display: flex;
-  
- 
+
   margin-left: -30px;
   margin-top: -30px;
 }
@@ -37,26 +36,30 @@
   margin-left: 30px;
   margin-top: 30px;
   height: 90px;
-
 }
 
-@media screen and (max-width: 779px){
-  .icon-company {flex-wrap: wrap;}
-
+@media screen and (max-width: 779px) {
+  .icon-company {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-
   .icon-company__item {
     flex-basis: calc(100% / 3 - 30px);
-
   }
-  .icon-company {flex-wrap: wrap;}
+  .icon-company {
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 1200px) {
   .icon-company {
-  display: flex;
-  justify-content: space-between;
-}
+    display: flex;
+    justify-content: space-between;
+  }
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
